@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="utf-8">
+        <title>양식을 만들고 입력 정보 보내기</title>
+
+    </head>
+    <body>
+        <form action="none.com" method="post">
+
+            <label for="name">이름</label>
+            <input id="name" type="text" name="name">
+            <br>
+            <label for="age">나이</label>
+            <input id="age" type="number" name="age">
+            <br>
+            <label for="character">성격</label>
+            <textarea id="character" name="character"></textarea>
+            <!--마지막에 name은 서버로 보내는 이름은 부여해준 것이다.-->
+        </form>
+
+        <input type="submit">
+
+    </body>
+<!--form은 블록레벨임 블록레벨 요소 안에다 
+            인라인의 인풋요소를 넣은 상태임.
+            form은 해당 서버에 데이터를 모아 보낸다.
+        
+    서버 묶고 보낼려면 form action,method, 마지막 submit까지-->
+        
+
+</html>
+    

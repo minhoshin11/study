@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경을 깔아보자</title>
+    <style>
+        div{
+            width: 190px;
+            height: 160px;
+            padding: 20px;
+            border: 20px double green;
+
+            /*background-color: yellowgreen;*/
+
+            background-clip: border-box;
+            /*
+            background-clip: 배경의 적용범위를 컨트롤 한다.
+            보더박스,패딩박스,콘텐츠박스를 만질 수 있다.
+            */
+
+            background-image: url(images/ㅇㅇㅇ.jpg);
+            background-size: 200 200px;
+            background-repeat: content;
+            background-position: center;
+            background-origin: ;
+            background-repeat: no-repeat;
+
+            /*
+            background: repeat -x 는 가로 -y는 세로임.
+            background-origin -> 이미지의 시작위치를 정할 수 있음.
+
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

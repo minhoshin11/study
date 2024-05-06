@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>겹치거나 넘치는 요소 다루기</title>
+</head>
+<style>
+    div{
+        width:100px;
+        height: 100px;
+        position: relative;
+    }
+    .div1{ background-color: orange; z-index: 4; overflow: auto;}
+    .div2{ background-color: red; bottom:50px; z-index: 3;}
+    .div3{ background-color: purple; bottom: 100px; z-index: 2;}
+    .div4{ background-color: green; bottom: 150px; z-index: 1;}
+ 
+
+
+    /*나중에 만들어진 것일수록 젤 위쪽을 먹는다.
+        이걸 하기 싫으면 z-index를 사용하면 된다.
+        z-index값을 높게 할 수록 위쪽에 보인다.
+    
+        z-index는 포지션 지정 요소들 끼리의 z축 순서를 정한다.
+        포지션이 지정되지 않은 요소들은 사용하는 게 아니다.
+        포지션 지정요소끼리 상대적이다. 10 21 33 99 이런식으로 해도 되긴한다. */
+</style>
+<body>
+    <div class="div1">
+
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+        orangeorangeorangeorange
+    </div>
+
+
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <div class="div4">4</div>
+    
+</body>
+</html>

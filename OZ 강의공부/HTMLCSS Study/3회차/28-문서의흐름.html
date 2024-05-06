@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서의 흐름</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        #first{
+            float: right;
+        }
+        #second{
+            float: right;
+        }
+        p{
+            clear: both;
+            /*both 양쪽에 float요소를 다 무시하겠다.*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img id="first"
+        src="images/서울야경.jpeg" width="160">
+        <img id="second"
+        src="images/서울야경.jpeg" width="160">
+    <p>
+        서울은 어ㅏ쩌구저쩌구 야경이 이쁘다
+    </p>
+    </div>
+    
+
+</body>
+</html>
+
+<!--
+    float을 이용하면 html에 규격에서 벗어날 수 있다.
+    clear는 float을 대응하기 위해서 만들어진 것이다.
+-->

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>템플릿 리터럴</title>
+</head>
+<body>
+    <script>
+        const dog = "강아지"
+        const cat = `고양이`
+        console.log(typeof dog)
+        console.log(typeof cat)
+
+        const modifier = "귀여운"
+        const prettyDog = `${modifier}     ${dog} 좋아요!`
+        console.log(prettyDog)
+        //공백도 문자에 포함되고 백틱안에 다른 문자를 넣어도 된다.
+
+        const prettyPet = `${modifier} ${prompt("좋아하는 동물은?")}! ` 
+        console.log(prettyPet)
+        //이러면 modifier는 귀여운이 나오고 ${prompt()}는 박스에 적었던 내용이 나온다.
+        //따라서 귀여운 고양이!, 귀여운 강아지! 이런식으로 출력 된다.  
+        //`${modifier} 에 {} 중괄호 습관이 안되어 있다. {} 잘쓰려고 노력하자.
+        
+    </script>
+</body>
+</html>

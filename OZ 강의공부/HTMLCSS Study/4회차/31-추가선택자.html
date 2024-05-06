@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 더 알아보기</title>
+    <style>
+        img[width *="2" ]{
+            border: 5px dashed rgb(227, 37, 37);
+        }
+
+        p > em{
+            color: blue;
+        }
+        /* 해당 속성을 [] 쳐놓고 넣으면 선택해서 쓸 수 있다.
+        width를 포함한 img들에게 css기능을 멕이고 있다.
+        기호와 함꼐 사용하는 속성 선택자
+        * : 값의 포함 여부
+        ^ : 값의 시작 여부
+        $ : 값의 끝 여부
+        */
+
+        #sam ~ p{
+            color: purple;
+        }
+        /* id는 #을 써야하니까 #sam, + p 하면 인접형제요소로 두 개 쓸 수 있음.
+        +대신 ~하면 형제모두를 씀.
+        유의사항 : 형제 선택자를 뒤이어 등장하는 형제들을 대상으로 한다!
+        앞에 있는 놈은 형제선택자가 안된다!
+        */
+
+
+
+    </style>
+</head>
+<body>
+    <img src="../images/서울야경.jpeg" width="120" alt="서울">
+    <img src="../images/서울야경.jpeg" width="120"> 
+    <img src="../images/서울야경.jpeg" width="120" id="sam">
+    <p>서울은 ㅁㅁㅁ이다</p>
+    <p>서울은 <em>동그라미</em>이다</p>
+    <p>예예예예예예</p>
+    <p>라라라라라</p>
+</body>
+</html>
+
+<!--자식요소는 한단계만 중첩이 가능함.
+ 따라서 body > em은 쓸수 없는데
+p > em 은 쓸 수 있음. p 다음 한단계가 em이기 때문 -->

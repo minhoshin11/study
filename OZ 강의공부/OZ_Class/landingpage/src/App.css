@@ -1,0 +1,17 @@
+.App{
+  margin : 0px;
+  padding: 0;
+}
+.video-background{
+  opacity: 0.5;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 비디오를 화면에 꽉 채우도록 설정 */
+  object-position: center bottom;
+}

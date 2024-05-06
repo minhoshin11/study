@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement-appendChild</title>
+</head>
+<body>
+    
+    <div id="container">
+
+
+    </div>
+    <script>
+        for(let a = 1; a <=5; a +=1)
+            {
+            const div = document.getElementById("container")
+            const box = document.createElement("div")
+            console.log(box)
+            box.style.color = "blue"
+            //js에선 css 속성 쓸 때 문자열이나 숫자로만 쓸 수 있음.
+            box.style.width = "200px"
+            box.style.height = "200px"
+            box.textContent = "헷갈리지만 신기하고 재미있다!"
+            div.appendChild(box) 
+            }
+
+        /* appendChild는 html요소만! , append는 다 됨.
+        appendChild는 console.log찍으면 나오는데
+        append는 undefined가 나옴 */
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여백 다루기</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        
+            margin: 10px 20px;
+            padding: 10px 20px 30px 40px;
+            padding-top: 20px;
+            /* padding-top: 20px; 이런식으로 지정하면
+                위에 코드를 안건드려도 20px로 만들 수 있다.
+                but 가장 아래에 등록된 놈이 최종본이다.
+
+            */
+            padding-right: 50px;
+            box-sizing:border-box;
+            
+            /*
+            box-sizing:border-box; 이놈을 쓰면
+            width,height가 보더값을 포함한다. 것이다.
+            반대로
+            box-sizing: content-box; 이렇게 쓰면
+            200,200px은 순수하게 콘텐츠 영역이 된다.
+            */
+
+            /* 
+                그냥 style선언 하면 
+                패딩이나 보더도 같이 커진다.(총 사이즈가 커짐)
+                이게 싫으면 box-sizing을 쓰는 것이다.
+            */
+        }
+    </style>
+
+</head>
+<body>
+   <div>
+
+   </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사 클래스 & 의사 요소</title>
+    <style>
+        .menu{
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        .menu > li{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a{
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            background-color: gray;
+        }
+        a:active{
+            color: white;
+            background-color: black;
+        }
+
+        li:nth-child(2n-1){
+            font-size: 20px;
+        }
+
+
+        a::after{
+            content: "보기";
+            color: green;
+        }
+        /*after랑 before은 활발하게 사용된다.*/
+
+
+        /*nth는 몇번째 라는 뜻이다.
+        지금은 li끼리 되어있기 때문에 li 쓴거다.
+        2n은 짝수번째만,2n-1은 홀수만 
+        n을 쓰면 모든 자연수니까 다 적용이 된다.*/
+
+        /* 의사 클래스는 특정상태만 선택
+            의사 요소는 일부분만 선택한다.*/
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">사전</a></li>
+        <li><a href="#">뉴스</a></li>
+        <li><a href="#">증권</a></li>
+        <li><a href="#">지도</a></li>
+    </ul>
+
+</body>
+</html>

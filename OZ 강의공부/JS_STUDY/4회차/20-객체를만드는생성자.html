@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체를 만드는 생성자</title>
+</head>
+<body>
+    
+
+    <script>
+        function BestSinger/* 요놈은 생성자 함수(document 같은 거) */(){
+            this.name = "VOS" //속성임. this하면 BestSinger 라는 뜻임.
+            this.member = "박지현, 최현준 , 김경록" //속성
+            this.singing = function(){ //요거 메소드(메소드는 객체 내의 함수임.)
+                console.log("니 이름 불렀나봐~ 나 술에 취해서")
+            }
+        }
+
+        const vos = new BestSinger() //vos를 객체로 설정함. 옆에 새끼가 생성자함수라 "new" 붙혀줘야 함.
+        console.log(vos.name)
+        console.log(vos.member)
+        vos.singing()
+
+
+        //생성자: 함수인데,객체를 생성할 목적으로 정의하는 함수. 설계도 개념.
+        //자바스크립트에서 기본으로 제공하지 않는 데이터 유형을 직접 만들 수 있다.
+    </script>
+</body>
+</html>

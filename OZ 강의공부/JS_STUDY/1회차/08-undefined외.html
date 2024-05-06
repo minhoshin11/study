@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undefined 외</title>
+</head>
+<body>
+    
+    <script>
+        let name;
+
+        console.log(name)
+        //undefined가 나옴.
+
+        name = "신민호";
+        console.log(name) //신민호가 나옴
+
+        name = null
+        console.log(name) //null이라고 뜸. 근데 여기에 nothing 이런 거 쓰면 안된다 함.
+
+        age = 0
+        console.log(age) //0 나옴
+        console.log(prompt("입력테스트")) 
+        /* 아무것도 안쓰고 확인하면 아무것도 안뜸 (문자열)
+        취소 누르면 null 뜸. */
+
+        console.log(typeof true)
+        console.log(typeof false)
+
+        let answer = confirm("기분이 좋습니까?") 
+        console.log(answer)
+        /*confirm은 확인하거나 취소하거나 둘중 하나만 제공하는 다이얼로그 창 
+            여기서 취소하면 false가 뜸*/ 
+        console.log(`현재 사용자는 기분이 좋나요? ${answer}`)
+        
+    </script>
+</body>
+</html>

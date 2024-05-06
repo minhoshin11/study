@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 만들기</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+
+    <script>
+        const h1 = document.querySelector('h1')
+        const p = document.querySelector('p')
+    
+        const isThere = confirm("버스요금 모르시면 확인")
+        //isThere 목적은 사용자로부터 예/아니오 중에 하나 입력받아서 저장할 목적.
+
+        if(isThere){
+            h1.textContent = "당신이 내야 할 버스 요금은?"
+        }
+
+        const age = parseInt(prompt("나이가 어떻게 되세요?"))
+        if(age >= 20,){
+            p.textContent = "1350원입니다!"
+        }
+        
+        else if(age >= 8){
+            p.textContent = "760원입니다!"
+        }
+        else{
+            p.textContent = "무료입니다!!"
+        }
+        /*else if문 같은 경우엔 i
+        f와 ifelse 둘다 포함이 안되는 놈으로 중간에 써주는 게 좋은 거 같다.*/
+    </script>
+</body>
+</html>

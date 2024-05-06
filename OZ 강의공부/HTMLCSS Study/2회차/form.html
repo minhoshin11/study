@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 양식</title>
+</head>
+<body>
+<header> 
+    <h1>설문조사 양식</h1>
+    <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+</header>
+    <hr>
+<main>
+    <form action="none" method="~!~.php"> 
+        <fieldset>
+            <legend> 개인정보</legend>
+            <label for="name">이름</label>
+            <input type="text" 
+            name="name"
+            id="name" placeholder="본명을 입력하세요">
+            <br>
+            <label for="email">이메일</label>
+            <input type="text" id="email"
+            name="email"
+            placeholder="메일 주소 쓰세요">
+        </fieldset>
+        <fieldset>
+            <legend>설문</legend>
+            <p>연령대가 어떻게 되십니까?</p>
+            <input type="radio" id="teen" name="age">
+            <label for="teen">10대</label>
+            <input type="radio" id="twenty" name="age">
+            <label for="twenty">20대</label>
+            <input type="radio" id="thirty" name="age">
+            <label for="thirty">30대</label>
+            <input type="radio" id="fourty" name="age">
+            <label for="fourty">40대</label>
+            <input type="radio" id="fifty" name="age">
+            <label for="fifty">50대</label>
+            <input type="radio" id="other" name="age">
+            <label for="other">그 외</label>
+<!--form을 만들 땐 name을 다 만드는 게 좋다.-->
+            <p>학원 선택 시 그 기준은 어떻게 되시나요?</p>
+            <input type="checkbox" id="position" name="academy">
+            <label for="position">위치</label>
+            <input type="checkbox" id="price" name="academy">
+            <label for="position">가격</label>
+            <input type="checkbox" id="teacher" name="academy">
+            <label for="position">강사</label>
+            <input type="checkbox" id="infra" name="academy">
+            <label for="position">시설</label>
+
+            
+        </fieldset>
+        <fieldset>
+            <legend>기타의견</legend>
+            <textarea rows="3" cols="30" name="comment"></textarea>
+        </fieldset>
+        <input type="submit">
+    </form>
+</main>
+    <hr>
+<footer>
+    <p>입력하느라 수고하셨습니다.</p>
+</footer>
+</body>
+</html>
+
+<!--name="blablabla"에서
+    form요소 안에서 name의 역할은 
+    폼안에 있는 입력요소들 간에 구별을 위한것.
+    서버에서 이름,나이 이렇게 하면 name,age는 구별되야하지 
+    같은 거에 묶으면 곤란하단 소리
+-->
+
+<!--
+    시멘틱 태그를 사용하여 만들었다.
+    헤더, 메인,푸터를 먼저 나눠놓고 만드는 게 좋다. 
+    (머릿말,본문, 끝부분으로 표현한다)
+
+    form을 만들 때 action,method를 하는 건 데이터를 서버에 보내기 위함.
+
+    
+    
+영역의 이름을 표시하는 텍스트를 범례(legend)라고 부름.
+
+-->
+

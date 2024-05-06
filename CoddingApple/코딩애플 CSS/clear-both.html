@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      border: 1px solid #000;
+      overflow: auto; /* 부모 요소의 높이가 자식 요소를 감쌀 수 있도록 함 */
+      clear: both; /* 부동 요소들을 제외하고 아래에 위치하도록 함 */
+    }
+    .child {
+      float: left; /* 자식 요소를 왼쪽으로 부동시킴 */
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="parent">
+  <div class="child"></div>
+  <div class="child"></div>
+  <p>오kdk</p>
+</div>
+  
+</body>
+</html>

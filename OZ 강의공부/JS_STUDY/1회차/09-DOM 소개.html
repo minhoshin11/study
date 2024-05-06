@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 소개 & 콘텐츠 변경하기</title>
+</head>
+<body>
+    <p>대한민국의 역습입니다!</p>
+    <p class="comment">손흥민이 몰고 갑니다, 크로스~</p>
+    <p class="comment" id="goal">조규성의 환상적인 마무리! 골!~</p>
+    
+    <script>
+        //입력 - 처리 - 출력
+        const p1 = document.querySelector("p")  //이렇게하면 첫번째 p를 객체로 만들었고 객체(p1)는 const 형태인 거임.
+        const p2 = document.querySelector(".comment")
+        const p3 = document.querySelector("#goal")
+
+        
+        console.log(p1.textContent)
+        console.log(p2.textContent)
+        console.log(p3.textContent)
+        /* console.log가 먼저라서 F12 consoles엔 한국내용이 나옴. 
+        text content를 올리고 Console.log가 내려가면 
+        콘솔에도 우루과이 내용으로 바뀜 */
+        p1.textContent = "우루과이의 역습입니다!"
+        p2.textContent = "수아레즈의 멋진 패스!"
+        p3.textContent = "포를란의 논스톱 슛, 골~~"
+        </script>
+</body>
+</html>
