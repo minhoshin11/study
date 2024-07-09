@@ -1,6 +1,8 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
+import Ani from "./pages/ani";
 import Flex from "./pages/flex";
+import Grid from "./pages/grid";
 
 function App() {
   //테일윈드는 실습할 때 마다 찾아와서 사용하는 게 좋음.
@@ -10,7 +12,7 @@ function App() {
     <>
       <div className="w-11 h-6 flex flex-row gap-2 mb-9">
         <button
-          className="border-4 border-blue-300 text-white bg-slate-700 size-11 pr-3 w-20"
+          className="border-4 border-blue-300 text-white bg-slate-700 size-11 p-1 w-20"
           onClick={() => {
             navigate("/");
           }}
@@ -18,16 +20,34 @@ function App() {
           Home
         </button>
         <button
-          className="border-4 border-blue-300 text-white bg-slate-700 size-11 pr-3 w-20"
+          className="border-4 border-blue-300 text-white bg-slate-700 size-11 p-1 w-20"
           onClick={() => {
             navigate("/flex");
           }}
         >
           flex
         </button>
+        <button
+          className="border-4 border-blue-300 text-white bg-slate-700 size-11 p-1 w-20"
+          onClick={() => {
+            navigate("/grid");
+          }}
+        >
+          Grid
+        </button>
+        <button
+          className="border-4 border-blue-300 text-white bg-slate-700 size-11  w-20"
+          onClick={() => {
+            navigate("/ani");
+          }}
+        >
+          Animation
+        </button>
       </div>
       <Routes>
         <Route path="/flex" element={<Flex />}></Route>
+        <Route path="/grid" element={<Grid />}></Route>
+        <Route path="ani" element={<Ani />}></Route>
       </Routes>
     </>
   );
