@@ -1,6 +1,7 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 import Ani from "./pages/ani";
+import Cdn from "./pages/cdn";
 import Flex from "./pages/flex";
 import Grid from "./pages/grid";
 
@@ -43,11 +44,20 @@ function App() {
         >
           Animation
         </button>
+        <button
+          className="border-4 border-blue-300 text-white bg-slate-700 size-11  w-20"
+          onClick={() => {
+            navigate("/cdn");
+          }}
+        >
+          CDN
+        </button>
       </div>
       <Routes>
         <Route path="/flex" element={<Flex />}></Route>
         <Route path="/grid" element={<Grid />}></Route>
         <Route path="ani" element={<Ani />}></Route>
+        <Route path="cdn" element={<Cdn />}></Route>
       </Routes>
     </>
   );
