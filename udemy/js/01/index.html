@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 외부 스크립트 -->
+    <script async src="main.js"></script>
+
+    <!-- 둘은 똑같은 결과를 보장하지만 밑에 걸로 치는게 좋음. 그게 더 간결함 -->
+    <script defer="defer"></script>
+    <script defer src="b.js"></script>
+
+    <!-- 내부 스크립트 -->
+    <script>
+      var str = "Hello, World";
+      console.log(str);
+    </script>
+    <!--  -->
+  </head>
+  <body></body>
+</html>
