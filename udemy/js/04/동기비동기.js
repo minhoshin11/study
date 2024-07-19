@@ -91,11 +91,22 @@ const getAllIcon = async () => {
 //그래서 또 JS에선 기능을 하나 내놓았대^^
 //Promise.all
 
-Promise.all([get1(), get2(), get3()]).then((icons) => {
-  console.log(icons);
-});
+// Promise.all([get1(), get2(), get3()]).then((icons) => {
+//   console.log(icons);
+// });
 //이렇게 Promise.all을 쓰면, 총 2초 걸린다.
 //비동기인 놈을 병렬로 처리하기 위해서 , 이놈을 쓰는 것이야
 //근데 이것도 하나가 실패나면 또 다 뻑남
 //Promise.allSettled (이건 또 1실패해도 성공한 거 가져 쓸 수 있음.)
 //객체형태로 값이 나옴 ㅇㅇ
+
+function task1() {
+  console.log("task1 시작");
+}
+
+function task2() {
+  console.log("task2 시작");
+}
+
+task1();
+task2();

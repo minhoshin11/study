@@ -25,7 +25,6 @@ const height165 = students.map((student) => {
     ? true + ` ${student.name}`
     : false + ` ${student.name}`;
 });
-console.log("3번 키 165이하 :", height165);
 
 //4. 학생들이 모두 10살 이상인지 확인해서 true, false 반환하기
 const age10 = students.every((student) => student.age >= 10);
@@ -45,6 +44,8 @@ const averageAge = (arr) => {
   return result / members;
 };
 console.log("5번", averageAge(students));
+// const answerAge = students.reduce((acc, student) => acc + student.age, 0);
+// console.log(answerAge, "5번 reduce");
 
 //6. 남학생들의 평균 연령 구하기
 const maleAge = students.filter((student) => student.gender === "male");
